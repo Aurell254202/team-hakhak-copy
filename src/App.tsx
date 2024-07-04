@@ -1,13 +1,21 @@
+// src/App.tsx
 import React from "react";
-import "./App.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import SidePanel from "./pages/menu/sidepanel";
+import AccountPage from "./pages/account/accountPage";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <h1>Welcome to the Application</h1>
-    </div>
+    <Router>
+      <div className="app-container">
+        <SidePanel />
+        <Routes>
+          <Route path="/account" element={<AccountPage />} />
+          {/* Add more routes as needed */}
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

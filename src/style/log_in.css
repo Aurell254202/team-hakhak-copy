@@ -11,21 +11,30 @@ body {
   height: 100vh;
 }
 
+/* Styles for left half */
 .custom-left-half {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #e0f7e9;
+  width: 50vw; /* or flex-basis: 50%; */
+  height: 100vh; /* Optional: if you want it to take full height of the viewport */
+  box-sizing: border-box; /* To ensure padding and borders are included in the element's total width and height */
 }
-.custom-right-half{
+
+/* Styles for right half */
+.custom-right-half {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #e0f7e9;
-  width: 50%;
+  width: 50vw; /* or flex-basis: 50%; */
+  height: 100vh; /* Optional: if you want it to take full height of the viewport */
+  box-sizing: border-box; /* To ensure padding and borders are included in the element's total width and height */
 }
+
 .custom-background-image {
   max-width: 100%;
   max-height: 100%;
@@ -42,7 +51,7 @@ body {
 
 .custom-login-form {
   background-color: #ffffff;
-  padding: 2rem;
+  padding: 40%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;

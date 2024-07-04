@@ -1,0 +1,19 @@
+/* UserTable.css */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.user-box {
+  background-color: #f0f0f0;
+  padding: 8px;
+  border-radius: 5px;
+}

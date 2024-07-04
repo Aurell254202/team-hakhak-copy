@@ -1,8 +1,8 @@
 .sidepanel-container {
   display: flex;
   height: 100vh;
-  background-color: #f8f9fa; /* Optional: a light background color */
-  align-items: center; /* Center items vertically */
+  background-color: #f8f9fa;
+  align-items: center;
   justify-content: center; /* Center items horizontally */
 }
 
@@ -30,7 +30,6 @@
   line-height: 1.2; /* Adjust line height for close spacing */
   text-align: center; /* Center text horizontally */
 }
-
 
 h2 {
   margin-top: 10px; /* Optional: Add some space above the MENU heading */
